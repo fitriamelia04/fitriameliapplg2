@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box menu</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            font-family: monospace;
+            background-image: url('https://cdn-image.hipwee.com/wp-content/uploads/2020/07/hipwee-photo-1566342088293-38debd381c63-750x422.jpg');
+        }
+
+
+        nav {
+            border: 1px solid #000000;
+            padding: 10px 45px;
+            display: flex;
+            font-family: 'Times New Roman', Times, serif;
+            justify-content: space-between;
+            position: relative;
+            height: 88px;
+        }
+
+        .logo {
+            min-width: 50px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 1s;
+        }
+
+        .logo:hover {
+            transition: all 1s;
+            transform: rotate(360deg);
+        }
+
+        h1 {
+            display: flex;
+            color: white;
+            text-shadow: 2px 2px 2px gray;
+            cursor: pointer;
+            padding-right: inherit;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 40px;
+            transition: all 0.5s;
+        }
+
+        .button1 {
+            border: 1px solid white;
+            flex-direction: row-reverse;
+            background: black;
+            border-radius: 5px;
+            margin-top: 25px;
+            cursor: pointer;
+            justify-content: flex-end;
+            padding: 10px 40px;
+            color: white;
+            gap: 10px;
+            box-sizing: border-box;
+            text-shadow: 2px 2px 2px gray;
+        }
+
+        .button2 {
+            border: 1px solid white;
+            flex-direction: row-reverse;
+            background: lightblue;
+            border-radius: 5px;
+            margin-top: 0px;
+            cursor: pointer;
+            justify-content: flex-end;
+            padding: 10px 40px;
+            color: white;
+            box-sizing: border-box;
+            text-shadow: 2px 2px 2px gray;
+            transition: all 0.5s;
+
+
+        }
+
+        .button2:hover {
+            background: gray;
+            color: #000000;
+            transition: all 0.5s;
+        }
+
+        .button2:focus {
+            background: darkgrey;
+        }
+
+        .button3 {
+            width: 600px;
+            height: 60px;
+        }
+
+        .button1:hover {
+            background: gray;
+            color: #000000;
+            transition: all 0.5s;
+        }
+
+        button:focus {
+            background: darkgrey;
+        }
+
+        button:active {
+            background: black
+        }
+
+
+        .text {
+            width: 268px;
+            height: 120px;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .logo a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .a2:hover {
+            text-decoration: underline grey;
+            transition: all 0.5s;
+        }
+
+
+        main {
+            border-radius: 20px;
+            background-color: white;
+            padding: 10px;
+            width: 350px;
+            height: 450px;
+            border: 0.5px solid grey;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+            margin: 20px 40px;
+            flex-wrap: wrap;
+
+
+        }
+
+
+        .head1 {
+            width: 100;
+            font-weight: bold;
+            font-size: 25px;
+            margin-right: 100px;
+
+
+        }
+
+        .head2 {
+            width: 100;
+            font-weight: bold;
+            font-size: 25px;
+            margin-right: 180px;
+
+
+        }
+
+        .div1 {
+            color: gray;
+            text-align: left;
+            display: inline-block;
+        }
+
+        .div2 {
+            color: gray;
+            text-align: left;
+            display: inline-block;
+
+        }
+
+        button {
+            background-color: gray;
+            border-radius: 50px;
+            padding: 7px 45px;
+            margin: 20px;
+            margin-top: 45px;
+            background: lightblue;
+            cursor: pointer;
+            color: white;
+
+        }
+
+        button:hover {
+            background: gray
+        }
+
+
+        img {
+            border-radius: 20px;
+        }
+
+        .lg {
+            border-radius: 100%;
+        }
+
+        .form1 {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px 20px;
+            justify-content: center;
+
+        }
+
+        .form2 {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px 20px;
+            justify-content: center;
+        }
+
+        main {
+            transition: all 1s;
+        }
+
+        main:hover {
+            transition: all 1s;
+            transform: scale(1.1);
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>well</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img class="lg"
+                src="data:image/png;base64,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"
+                width="10%">
+            <h1><a class="a2" href="">Home</a></h1>
+            <h1><a class="a2" href="">Create</a></h1>
+            <h1><a class="a2" href="">About</a></h1>
+        </div>
+        </div>
+        <div><a href="https://ebiomutu.site/fitriamelia">
+                <button class="button1">Submit a Request</button>
+                <button class="button2">Sign in</button>
+            </a>
+        </div>
+    </nav>
+
+
+    <form class="form1" action="https://en.wikipedia.org/wiki/Haechan" method="get">
+        <main>
+            <img src="https://static.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/2023/02/26/Interaksi-Haechan-NCT-dan-staf-tuai-perhatian-penggemar-2362211499.jpg"
+                width="100%">
+            <b>
+                <div class="head1">lee donghyuck</div>
+            </b>
+            <div2 class="div1">Lee Dong-hyuck lebih dikenal dengan nama Haechan (lahir 6 Juni 2000), Ia merupakan salah
+                satu anggota dari boy band asal Korea Selatan, NCT, serta bagian dari tiga sub-unit NCT, NCT 127, NCT
+                Dream, dan NCT U.</div2></br>
+            <center>
+                <button>Read more</button>
+            </center>
+        </main>
+        <main>
+    </form>
+    <form class="form2" action="https://id.wikipedia.org/wiki/Mark_Lee_(penyanyi)" method="get">
+        <img src="https://static.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/p1/916/2023/09/18/photo_6071001586919913119_y-2842583356.jpg"
+            width="100%">
+        <b>
+            <div class="head2">mark lee</div>
+        </b>
+        <div2 class="div2">Mark Lee (lahir 2 Agustus 1999), lebih dikenal dengan nama Mark adalah rapper, dancer, dan
+            penyanyi berkebangsaan Kanada. Ia merupakan anggota dari boyband asal Korea Selatan, NCT.</div2></br>
+        <center>
+            <button>Read more</button>
+        </center>
+        </main>
+
+    </form>
+
+</body>
+
+</html>
